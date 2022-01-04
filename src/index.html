@@ -1,12 +1,94 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8"/>
-    <title>My First Parcel App</title>
+    <meta charset="utf-8" />
+    <title>Modanisa Bootcamp - Homework 1 - Linkedin Post</title>
     <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="app.js"></script>
+    <script type="text/javascript" src="app.js"></script>
   </head>
   <body>
-    <h1>Hello, World!</h1>
+    <div class="container">
+      <div class="post">
+        <div class="post_header">
+          <div class="post_avatar">
+            <img src="../assets/linkedin-post-avatar.png" alt="" />
+          </div>
+          <div class="post_info" id="post_align">
+            <h2>Google</h2>
+            <p>23,251,608 followers</p>
+            <p>
+              23h • Edited •
+              <span class="material-icons"> public </span>
+            </p>
+          </div>
+          <div class="post_details">
+            <span class="material-icons"> more_horiz </span>
+          </div>
+        </div>
+        <div class="post_body">
+          <div class="post_description">
+            <p>
+              Thanks so much to everyone who attended The Vision Summit: An
+              experience for Women of Color earlier this month.
+              <br />
+              <a href="#"> #ICYMI </a>check out the recorded sessions at
+              <a href="#"> goo.gle/visionsummit2021 </a>
+              <span id="dots"
+                ><a onclick="readMore()" href="#" id="link"> ...see more </a>
+              </span>
+              <span id="more">
+                and as always, head to our careers site to pursue open roles at
+                Google goo.gle/3EeF8gh
+              </span>
+            </p>
+          </div>
+          <div class="post_link">
+            <div class="post_image">
+              <img src="../assets/post-image-linkedin.png" alt="" />
+            </div>
+            <div class="post_image_description">
+              <h4>The Vision Summit 2021: an experience for Women of Color</h4>
+              <p>careersonair.withgoogle.com • 1 min read</p>
+            </div>
+            <div class="post_like_comments" id="post_align">
+              <div class="post_likes">
+                <img
+                  src="https://static-exp1.licdn.com/sc/h/esahr356vrv0vklww6hcjar1j"
+                  alt=""
+                />
+                <img
+                  src="https://static-exp1.licdn.com/sc/h/emei2gdl9ikg7penkh9ij9llx"
+                  alt=""
+                />
+                <img
+                  src="https://static-exp1.licdn.com/sc/h/9wt27hvi2lgll1v30u00n0p5p"
+                  alt=""
+                />
+                <p>744</p>
+              </div>
+              <div class="post_comments"><p>17 comments</p></div>
+            </div>
+            <div class="post_share_buttons" id="post_align">
+              <div class="like">
+                <span class="material-icons"> thumb_up </span>
+                <p>Like</p>
+              </div>
+              <div class="comment">
+                <span class="material-icons"> comment </span>
+                <p>Comment</p>
+              </div>
+              <div class="share">
+                <span class="material-icons"> share </span>
+                <p>Share</p>
+              </div>
+              <div class="send">
+                <span class="material-icons"> send </span>
+                <p>Send</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

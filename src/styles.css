@@ -1,4 +1,178 @@
-h1 {
-  color: hotpink;
-  font-family: cursive;
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100%;
+  overflow-x: hidden;
+  font-family: "Segoe UI", Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen,
+    "Oxygen Sans", Cantarell, "Droid Sans", "Segoe UI Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
+  color: #333;
+  background: #222222;
+  background: -webkit-linear-gradient(to bottom right, #bdcfe2, #2f489c);
+  background: linear-gradient(to bottom right, #bdcfe2, #2f489c);
+}
+
+a {
+  color: #1260d6;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.container {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 1.5px 0 0 rgba(0, 0, 0, 0.1);
+  width: 550px;
+  display: flex;
+  flex-direction: column;
+}
+
+.post {
+  background-color: white;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.post_header {
+  padding: 15px;
+  display: flex;
+  margin-bottom: 10px;
+}
+.post_header > .post_avatar {
+  align-self: center;
+  width: 55px;
+  height: 55px;
+  flex-grow: 1;
+}
+
+.post_header > .post_avatar > img {
+  width: 55px;
+  height: 55px;
+}
+.post_info {
+  flex-grow: 15;
+}
+
+.post_info > p {
+  margin: 0;
+  font-size: 12px;
+  color: gray;
+}
+.post_info .material-icons {
+  font-size: 14px;
+}
+
+.post_body {
+  overflow-wrap: anywhere;
+  font-size: 14px;
+}
+
+.post_info > h2 {
+  font-size: 15px;
+  margin: 0 0 3px 0;
+}
+
+.post_buttons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.post_details {
+  flex-grow: 1;
+}
+
+.align-center {
+  align-self: center;
+}
+
+#link {
+  color: #868f99;
+  border: 0px;
+  cursor: pointer;
+}
+
+#more {
+  display: none;
+}
+
+#dots {
+  color: #868f99;
+}
+.post_description {
+  padding: 0 15px;
+}
+
+.post_link > .post_image {
+  align-self: center;
+  display: flex;
+  width: 100%;
+}
+.post_link > .post_image > img {
+  object-fit: contain;
+  max-width: 100%;
+}
+
+.post_link > .post_image_description {
+  padding: 10px 15px;
+  background-color: #ecf0f5;
+}
+.post_link > .post_image_description > p {
+  margin: 10px 0 0 0;
+}
+
+.post_link > .post_image_description > h4 {
+  margin: 0 0 10px 0;
+}
+.post_link > .post_buttons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.post_like_comments {
+  margin: 2px 15px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  color: #868f99;
+  border-bottom: 1px solid #d7dbdf;
+}
+.post_likes {
+  display: flex;
+}
+
+#post_align {
+  justify-content: space-between;
+}
+.post_share_buttons {
+  margin: 2px 40px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  color: #868f99;
+}
+
+.post_share_buttons > .like,
+.comment,
+.share,
+.send {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+}
+
+.post_share_buttons > .like > p,
+.comment > p,
+.share > p,
+.send > p {
+  padding: 0 5px;
 }
